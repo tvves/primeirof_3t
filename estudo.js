@@ -28,3 +28,16 @@ function mostraTabuada(){
         document.write("O valor do i " + i + "<br>");
     }
 }
+function total(){
+    let v = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+    let r = 0;
+    for(let i=1; i <=t; i++){
+        r = v * (1 +(j/100));
+        document.write("Mês " + " - valor: " + r + "<br>")
+        v = r;
+    }
+        
+    document.write("Resultado= "+ r);
+}
