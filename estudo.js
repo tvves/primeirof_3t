@@ -41,3 +41,27 @@ function total(){
         
     document.write("Resultado= "+ r);
 }
+
+function somaNota(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+
+    let r = Number(n1)+Number(n2)+Number(n3)+Number(n4);
+
+    document.getElementById("resul").innerHTML = "Soma: " + r;
+}
+
+function tata(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+    let m1 = document.getElementById("m1").value;
+
+    let r = Number(n1)+Number(n2)+Number(n3)+Number(n4)/Number(m1);
+
+    document.getElementById("RESULTADO").innerHTML = "Divisão: " + r;
+}
+
